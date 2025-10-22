@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poovarasu - Information Technology Student Portfolio. Showcasing projects, skills, and experience in web development and IT solutions.">
+    <meta name="keywords" content="Poovarasu, Information Technology, Web Developer, Portfolio, Student, Projects">
+    <meta name="author" content="Poovarasu">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Poovarasu - IT Student Portfolio">
+    <meta property="og:description" content="Information Technology student passionate about web development and innovative solutions">
+    <meta property="og:image" content="./assets/1000101515.png">
+    <meta property="og:url" content="https://poovarasu.github.io/portfolio">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Poovarasu - IT Student Portfolio">
+    <meta name="twitter:description" content="Information Technology student passionate about web development">
+    <meta name="twitter:image" content="./assets/1000101515.png">
+    
+    <title>Poovarasu - Information Technology Student</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="preload" href="./assets/1000101515.png" as="image">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- Print stylesheet -->
+    <link rel="stylesheet" href="./css/print.css" media="print">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Animated Background Elements -->
+    <div class="floating-shapes">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+    
+    <!-- Matrix Digital Rain Effect (Optional) -->
+    <div class="matrix-rain" id="matrix-rain"></div>
+    
+    <!-- Header with Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav__container">
+                <a href="#hero" class="nav__logo" aria-label="Go to top">
+                    <span class="nav__logo-text">Poovarasu</span>
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button class="nav__toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </button>
+                
+                <!-- Navigation menu -->
+                <ul class="nav__menu" role="list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <button class="theme-toggle" aria-label="Toggle dark mode">
+                            <span class="theme-toggle__icon">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero" aria-label="Introduction">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Hi, I'm <span class="hero__name" data-text="Poovarasu">Poovarasu</span>
+                    </h1>
+                    <p class="hero__subtitle">Information Technology Student</p>
+                    <p class="hero__tagline">
+                        Passionate about creating innovative solutions and building the future through technology
+                    </p>
+                    
+                    <!-- Call to action buttons -->
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="./assets/resume.pdf" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                    </div>
+                    
+                    <!-- Social links -->
+                    <div class="hero__social">
+                        <a href="https://github.com/poovarasu" target="_blank" rel="noopener noreferrer" 
+                           class="social-link" aria-label="Visit my GitHub profile">
+                            <svg class="social-link__icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/poovarasu" target="_blank" rel="noopener noreferrer" 
+                           class="social-link" aria-label="Visit my LinkedIn profile">
+                            <svg class="social-link__icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/poovarasu" target="_blank" rel="noopener noreferrer" 
+                           class="social-link" aria-label="Visit my Twitter profile">
+                            <svg class="social-link__icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Profile image -->
+                <div class="hero__image">
+                    <img src="./assets/1000101515.png" alt="Poovarasu - Information Technology Student" 
+                         class="hero__photo" loading="eager">
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about section" aria-label="About me">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__intro">
+                            Hello! I'm Poovarasu, a passionate Information Technology student with a keen interest in 
+                            web development, software engineering, and emerging technologies. I'm currently pursuing my 
+                            degree in Information Technology, where I'm building a strong foundation in programming, 
+                            system design, and digital innovation.
+                        </p>
+                        <p class="about__description">
+                            My journey in technology started with curiosity about how things work behind the scenes. 
+                            Today, I focus on creating user-centered solutions that bridge the gap between complex 
+                            technology and meaningful user experiences. I believe in continuous learning and staying 
+                            updated with the latest technological trends.
+                        </p>
+                        <p class="about__goals">
+                            When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                            projects, or working on personal projects that challenge my problem-solving skills. I'm 
+                            always excited to collaborate on innovative projects and learn from fellow developers.
+                        </p>
+                    </div>
+                    <div class="about__image">
+                        <img src="./assets/1000101515.png" alt="Poovarasu working" 
+                             class="about__photo" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="skills section" aria-label="My skills">
+            <div class="container">
+                <h2 class="section__title">Skills & Technologies</h2>
+                <div class="skills__content">
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Frontend Development</h3>
+                        <div class="skills__list" id="frontend-skills">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Backend Development</h3>
+                        <div class="skills__list" id="backend-skills">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Tools & Technologies</h3>
+                        <div class="skills__list" id="tools-skills">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects section" aria-label="My projects">
+            <div class="container">
+                <h2 class="section__title">Featured Projects</h2>
+                <div class="projects__grid" id="projects-grid">
+                    <!-- Projects will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="experience section" aria-label="Work experience">
+            <div class="container">
+                <h2 class="section__title">Experience</h2>
+                
+                <!-- Filter buttons -->
+                <div class="experience__filters">
+                    <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="work">Work</button>
+                    <button class="filter-btn" data-filter="internship">Internships</button>
+                    <button class="filter-btn" data-filter="freelance">Freelance</button>
+                </div>
+                
+                <div class="experience__timeline" id="experience-timeline">
+                    <!-- Experience items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="education section" aria-label="Educational background">
+            <div class="container">
+                <h2 class="section__title">Education</h2>
+                <div class="education__timeline">
+                    <div class="timeline-item education__item">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__date">2022 - Present</div>
+                            <h3 class="timeline-item__title">Bachelor of Information Technology</h3>
+                            <p class="timeline-item__subtitle">University Name</p>
+                            <p class="timeline-item__description">
+                                Currently pursuing a comprehensive degree in Information Technology with focus on 
+                                software development, database management, network security, and emerging technologies. 
+                                Maintaining strong academic performance while actively participating in coding competitions 
+                                and tech communities.
+                            </p>
+                            <div class="timeline-item__tags">
+                                <span class="tag">Programming</span>
+                                <span class="tag">Database Design</span>
+                                <span class="tag">Web Development</span>
+                                <span class="tag">System Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item education__item">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__date">2020 - 2022</div>
+                            <h3 class="timeline-item__title">Higher Secondary Certificate</h3>
+                            <p class="timeline-item__subtitle">School Name</p>
+                            <p class="timeline-item__description">
+                                Completed higher secondary education with concentration in Science and Mathematics. 
+                                Developed strong analytical and problem-solving skills that form the foundation of 
+                                my technical journey.
+                            </p>
+                            <div class="timeline-item__tags">
+                                <span class="tag">Mathematics</span>
+                                <span class="tag">Physics</span>
+                                <span class="tag">Computer Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Blog Preview Section -->
+        <section id="blog" class="blog section" aria-label="Latest blog posts">
+            <div class="container">
+                <h2 class="section__title">Latest Blog Posts</h2>
+                <div class="blog__grid">
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="./assets/download (2).jpeg" alt="Understanding Modern Web Development" loading="lazy">
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <time datetime="2024-01-15">January 15, 2024</time>
+                                <span class="blog-card__category">Web Development</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    Understanding Modern Web Development Frameworks
+                                </a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                A comprehensive guide to choosing the right web development framework for your next project...
+                            </p>
+                            <a href="#" class="blog-card__link" target="_blank" rel="noopener noreferrer">
+                                Read More →
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="./assets/download (3).jpeg" alt="The Future of AI in Web Development" loading="lazy">
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <time datetime="2024-01-10">January 10, 2024</time>
+                                <span class="blog-card__category">AI & Technology</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    The Future of AI in Web Development
+                                </a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Exploring how artificial intelligence is revolutionizing the way we build and interact with websites...
+                            </p>
+                            <a href="#" class="blog-card__link" target="_blank" rel="noopener noreferrer">
+                                Read More →
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="./assets/download (4).jpeg" alt="Best Practices for Responsive Design" loading="lazy">
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <time datetime="2024-01-05">January 5, 2024</time>
+                                <span class="blog-card__category">Design</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    Best Practices for Responsive Web Design
+                                </a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Learn essential techniques for creating websites that work beautifully across all devices...
+                            </p>
+                            <a href="#" class="blog-card__link" target="_blank" rel="noopener noreferrer">
+                                Read More →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="blog__cta">
+                    <a href="#" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
+                        View All Posts
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact section" aria-label="Contact information">
+            <div class="container">
+                <h2 class="section__title">Contact Me</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Get In Touch</h3>
+                        <p class="contact__description">
+                            I'm always interested in hearing about new opportunities and interesting projects. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H6C4.89 1 4 1.89 4 3V21C4 22.11 4.89 23 6 23H18C19.11 23 20 22.11 20 21V11L21 9ZM18 21H6V3H14V9H18V21Z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__info-text">
+                                    <h4>Name</h4>
+                                    <p>Poovarasu</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__info-text">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+919566878849">9566878849</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact__info-text">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:poovarasu614@gmail.com">poovarasu614@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                                <span class="form-error" id="message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary contact__submit">
+                                <span class="btn__text">Send Message</span>
+                                <span class="btn__loading" style="display: none;">Sending...</span>
+                            </button>
+                        </form>
+                        
+                        <!-- Success message -->
+                        <div class="contact__success" id="contact-success" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                        </div>
+                        
+                        <!-- Form integration note -->
+                        <div class="contact__note">
+                            <p><strong>Note:</strong> This form is set up for demo purposes. To make it functional:</p>
+                            <ol>
+                                <li>Sign up for <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">Formspree</a></li>
+                                <li>Replace the form action URL in the JavaScript</li>
+                                <li>Or integrate with your preferred form handling service</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__name">Poovarasu</h3>
+                    <p class="footer__title">Information Technology Student</p>
+                    <p class="footer__description">
+                        Building the future through innovative technology solutions
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">Quick Links</h4>
+                        <ul class="footer__nav">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">Connect</h4>
+                        <div class="footer__social">
+                            <a href="https://github.com/poovarasu" target="_blank" rel="noopener noreferrer" 
+                               aria-label="GitHub">GitHub</a>
+                            <a href="https://linkedin.com/in/poovarasu" target="_blank" rel="noopener noreferrer" 
+                               aria-label="LinkedIn">LinkedIn</a>
+                            <a href="https://twitter.com/poovarasu" target="_blank" rel="noopener noreferrer" 
+                               aria-label="Twitter">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 Poovarasu. All rights reserved. Built with ❤️ using HTML, CSS, and JavaScript.
+                </p>
+                <div class="footer__keyboard-shortcuts">
+                    <span>Keyboard shortcuts:</span>
+                    <kbd>G</kbd> Projects
+                    <kbd>C</kbd> Contact
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal__overlay" tabindex="-1"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title" id="modal-title">Project Details</h2>
+                <button class="modal__close" aria-label="Close modal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body" id="modal-body">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
